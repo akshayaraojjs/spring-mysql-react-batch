@@ -1,0 +1,103 @@
+<!-- Representation of Data in Rows & Columns Format -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td, th{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- table tag is a root element for table structure -->
+    <!-- tr tag is used for Table Row -->
+    <!-- th tag is used for Table Heading -->
+    <!-- td tag is used for Table Data -->
+    <table>
+        <tr>
+            <th>Heading 1</th>
+            <th>Heading 2</th>
+            <th>Heading 3</th>
+            <th>Heading 4</th>
+        </tr>
+        <tr>
+            <td>Data 11</td>
+            <td>Data 12</td>
+            <td>Data 13</td>
+            <td>Data 14</td>
+        </tr>
+        <tr>
+            <td>Data 21</td>
+            <td>Data 22</td>
+            <td>Data 23</td>
+            <td>Data 24</td>
+        </tr>
+        <tr>
+            <td>Data 31</td>
+            <td>Data 32</td>
+            <td>Data 33</td>
+            <td>Data 34</td>
+        </tr>
+        <tr>
+            <td>Data 41</td>
+            <td>Data 42</td>
+            <td>Data 43</td>
+            <td>Data 44</td>
+        </tr>
+    </table>
+    <!-- br tag is used to give line breaks -->
+    <br>
+    <!-- hr tag is used to give horizontal line -->
+    <hr>
+    <br>
+    <!-- Rowspan - Used to merge rows -->
+    <!-- Colspan - Used to merge cols -->
+    <table>
+        <tr>
+            <th colspan="4">Player Name, Country, Role & IPL Team</th>
+            <!-- <th>Country</th> -->
+            <!-- <th>Role</th> -->
+            <!-- <th>IPL Team</th> -->
+        </tr>
+        <tr>
+            <td>Virat Kohli</td>
+            <td rowspan="4">India</td>
+            <td rowspan="3">Batsman</td>
+            <td rowspan="4">RCB</td>
+        </tr>
+        <tr>
+            <td>Rajat Patidar</td>
+            <!-- <td>India</td> -->
+            <!-- <td>Batsman</td> -->
+            <!-- <td>RCB</td> -->
+        </tr>
+        <tr>
+            <td>Devdutt Padikkal</td>
+            <!-- <td>India</td> -->
+            <!-- <td>Batsman</td> -->
+            <!-- <td>RCB</td> -->
+        </tr>
+        <tr>
+            <td>Krunal Pandya</td>
+            <!-- <td>India</td> -->
+            <td rowspan="3">All Rounder</td>
+            <!-- <td>RCB</td> -->
+        </tr>
+        <tr>
+            <td>Glenn Maxwell</td>
+            <td rowspan="2">Australia</td>
+            <!-- <td>All Rounder</td> -->
+            <td>Punjab Kings</td>
+        </tr>
+        <tr>
+            <td>Pat Cummins</td>
+            <!-- <td>Australia</td> -->
+            <!-- <td>All Rounder</td> -->
+            <td>SRH</td>
+        </tr>
+    </table>
+</body>
+</html>

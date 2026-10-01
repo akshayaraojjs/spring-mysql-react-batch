@@ -1,0 +1,95 @@
+<!-- Form is used to collect information from the user -->
+<!-- We use different input types to collect different information -->
+<!-- form tag is used to make a form in HTML -->
+<!-- In HTML, all tags can be categorized into 2 types: -->
+<!-- Block Level Elements (Entire line will be blocked) -->
+<!-- headings, p, ul, li, div, form -->
+<!-- Inline Elements (Allows other elements to occupy the space) -->
+<!-- a, input, img, li, div -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="backend.java" method="post">
+      <label for="first_name">First Name:</label>
+      <input type="text" name="first_name" id="first_name" required placeholder="Enter your name" maxlength="10"><br><br>
+      
+      <label for="last_name">Last Name:</label>
+      <input type="text" name="last_name" id="last_name"><br><br>
+      
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="age" step="2" min="1" max="120"><br><br>
+      
+      <label for="dob">DOB:</label>
+      <input type="date" name="dob" id="dob" min="1906-01-01" max="2026-09-30"><br><br>
+
+      <label for="birth_week">Birth Week:</label>
+      <input type="week" name="birth_week" id="birth_week"><br><br>
+
+      <label for="birth_month">Birth Month:</label>
+      <input type="month" name="birth_month" id="birth_month"><br><br>
+
+      <label for="birth_date_time">Birth Date & Time:</label>
+      <input type="datetime-local" name="birth_date_time" id="birth_date_time"><br><br>
+      
+      <label for="email_id">Email ID:</label>
+      <input type="email" name="email_id" id="email_id" value="name@example.com"><br><br>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" name="phone" id="phone"><br><br>
+      
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password"><br><br>
+      
+      <label for="address">Address:</label>
+      <textarea name="address" id="address" rows="5" cols="30"></textarea
+        ><br><br>
+
+      <label for="gender">Gender:</label>
+      <input type="radio" name="gender" id="male" value="Male">
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="Female" checked>
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="others" value="Others">
+      <label for="others">Others</label><br><br>
+
+      <label for="course">Course:</label>
+      <input type="checkbox" name="course1" id="physics" value="Physics" checked>
+      <label for="physics">Physics</label>
+      <input type="checkbox" name="course2" id="chemistry" value="Chemistry">
+      <label for="chemistry">Chemistry</label>
+      <input type="checkbox" name="course3" id="maths" value="Mathematics">
+      <label for="maths">Mathematics</label>
+      <input type="checkbox" name="course4" id="computer_science" value="Computer Science">
+      <label for="computer_science">Computer Science</label><br><br>
+      
+      <label for="state">State:</label>
+      <select name="state" id="state" multiple>
+        <option>Select your state</option>
+        <option value="Karnataka" selected>Karnataka</option>
+        <option value="Tamil Nadu">Tamil Nadu</option>
+        <option value="Kerala">Kerala</option>
+        <option value="Goa">Goa</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Telangana">Telangana</option>
+      </select><br><br>
+
+      <label for="photo">Upload Photo:</label>
+      <input type="file" name="photo" id="photo" multiple accept="image/*"><br><br>
+      
+      <label for="rating">Rating:</label>
+      <input type="range" name="rating" id="rating" min="1" max="10" value="7"><br><br>
+
+      <label for="fav_color">Favourite Color:</label>
+      <input type="color" name="fav_color" id="fav_color"><br><br>
+
+      <input type="reset" value="Clear Form">
+      <input type="submit" value="Submit Form">
+    </form>
+  </body>
+</html>

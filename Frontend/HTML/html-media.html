@@ -1,0 +1,38 @@
+<!-- HTML Media includes Image, Audio & Video -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- img tag is used to embed an image in the HTML Web page -->
+    <!-- src(source) attribute used for providing the path of the image -->
+    <!-- height & width attribute are used for adjusting the height & width of the image -->
+    <!-- We should not use both height & width attribute without knowing the Aspect Ratio -->
+    <!-- alt attribute is used for giving info about image if image is missing -->
+    <img
+      src="media/images/tiger1.jpg"
+      width="600px"
+      alt="Tiger walking in Jungle"
+    />
+    <img
+      src="media/images/tiger2.jpg"
+      height="600px"
+      alt="Tiger standing on the Rock"
+    />
+
+    <!-- video tag is used to embed the video in HTML page -->
+    <!-- src(source) attribute used for providing the path of the video -->
+    <!-- controls attribute is very important in video tag, if not used video acts like a thumbnail -->
+    <!-- height & width attribute to adjust the dimension of the video -->
+    <!-- autoplay is used to automatically play the video as soon as the page is loaded but muted attributed should be given to autoplay the video -->
+    <!-- loop attribute is used to play the video continuously even after the completion of video  -->
+    <video controls src="media/videos/sunrise.mp4"></video>
+    <video controls src="media/videos/waterfall.mp4" height="600px" autoplay muted loop></video>
+
+    <!-- audio tag is used to embed an audio in the HTML document -->
+    <audio controls src="media/audios/flute-music.mp3"></audio>
+  </body>
+</html>

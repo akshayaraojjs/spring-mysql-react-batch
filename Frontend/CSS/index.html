@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Internal CSS -->
+    <style>
+        /* This is a CSS Comment */
+
+        /* Syntax to write CSS styles: */
+        /*  selector {
+                property1: value;
+                property2: value;
+                property3: value;
+            }*/
+
+        /* To apply style, we need to target the element - Selector */
+        /* 1. Universal Selector */
+        /* 2. Element Selector */
+        /* 3. Class Selector */
+        /* 4. ID Selector */
+
+        /* Element Selector */
+        h1 {
+            /* Color can be applied in multiple ways: Color Names, Hexadecimal Code, RGB method, HSL method */
+            /* Color Name method */
+            /* color: goldenrod; */
+            /* RGB - (Red, Green & Blue) method */
+            /* 0 - 255 - Range for RGB colors */
+            /* color: rgb(150,85,135); */
+            /* RGBa - RGB + alpha(opacity) */
+            /* for a(alpha): 0 - 1 */
+            /* color: rgba(255,0,0,0.85); */
+            /* Hexadecimal Values: 0 - 9 + A - F */
+            /* #color-code => #20AB40 */
+
+            /* color property is used with text */
+            color: #00308f;
+            /* background-color property is used to apply for background */
+            background-color: #da9100;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        /* Box Model - Combination of Margin, Border & Padding */
+        /* Margin - Outer Gap */
+        /* Border - Used to divide margin & padding */
+        /* Padding - Inner Gap */
+
+        /* Thumb Rule for Margin & Padding: */
+        /* Shorthand property for Margin & Padding */
+        /* 4 values: Top Right Bottom Left (Clockwise Direction) */
+        /* 3 values: Top Right-Left Bottom */
+        /* 2 values: Top-Bottom Right-Left (Opposite Sides) */
+        /* 1 value: All Sides */
+        h2 {
+            color: orange;
+            background-color: cyan;
+            margin: 30px;
+            /* 4 separate properties */
+            margin-top: 50px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 60px;
+            /* padding: 50px 40px 30px 20px; */
+            padding: 50px 25px 80px;
+        }
+
+        h3 {
+            /* border-width - Thickness of border */
+            border-width: 5px;
+            /* border-color - To apply color for the border */
+            border-color: red;
+            /* Styles: solid, dashed, dotted, double, groove, ridge */
+            border-style: ridge;
+
+            /* Shorthand property for border: */
+            /* border: width style color */
+            border: 10px ridge darkblue;
+
+            /* border-radius used to make the border curvy */
+            border-radius: 100px;
+
+            /* Different curve for all corners: */
+            /* Top-Left, Top-Right, Bottom-Left and Bottom-Right */
+            border-top-left-radius: 30px;
+            border-top-right-radius: 60px;
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 40px;
+            padding: 20px;
+            margin: 40px;
+
+            /* border-top, border-right, border-left, border-bottom */
+        }
+    </style>
+  </head>
+  <body>
+    <h1>CSS stands for Cascading Style Sheets</h1>
+    <p>
+      It is used for styling or designing purpose. It can be used in 3 types:
+    </p>
+    <h2>Internal CSS - Used within HTML File</h2>
+    <h2>External CSS - Used in External separate file</h2>
+    <h2>Inline CSS - Used with HTML Tag</h2>
+    <h3>CSS is useful for applying styles to align and color the elements</h3>
+  </body>
+</html>
