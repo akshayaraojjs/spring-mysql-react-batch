@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Internal CSS -->
+    <style>
+      /* Element Selector */
+      h1 {
+        color: crimson;
+        padding: 10px;
+        margin: 5px;
+        background-color: yellow;
+        border: 2px double black;
+      }
+
+      /* Class Selector */
+      /* class attribute is used in html tag and it can be used to target and apply styles */
+      /* Syntax to apply style using class-selector: */
+      /* ".className" is used to apply styles */
+      .second-heading {
+        color: yellow;
+        padding: 20px;
+        margin: 10px;
+        background-color: red;
+        border: 2px double blue;
+      }
+
+      /* We can be apply same styles for multiple elements using same class name*/
+      /* Class can be repeated. */
+      /* We can use multiple classes for single element */
+      /* To apply same style for 2 different elements, we can use 2 classes with comma */
+
+      /* Text Properties */
+      /* text-align: left | right | center | justify */
+      /* line-height: any number (0.5 | 1.5 | 2 ) */
+      /* letter-spacing: any size (0.5px | 3px | 5px) */
+      /* word-spacing: any size (0.5px | 3px | 5px) */
+      /* text-transform: uppercase | lowercase | capitalize */
+      /* text-decoration: style(dotted, dashed, double, solid, wavy) underline | overline | line-through | none */
+      .h1-heading-2,
+      .para1 {
+        text-align: center;
+        line-height: 1.5;
+        letter-spacing: 3px;
+        word-spacing: 10px;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    
+    .h2-heading-2,
+    .para2 {
+        text-align: right;
+        line-height: 2;
+        letter-spacing: 5px;
+        word-spacing: 20px;
+        text-transform: lowercase;
+        text-decoration: dashed overline;
+    }
+    
+    .h2-heading-3,
+    .para3 {
+        text-align: justify;
+        line-height: 0.8;
+        letter-spacing: 0.8px;
+        word-spacing: 0.8px;
+        text-transform: capitalize;
+        text-decoration: line-through;
+    }
+    
+    .para4 {
+        text-align: left;
+        line-height: 3;
+        letter-spacing: 0.5px;
+        word-spacing: 0.2px;
+        text-decoration: wavy underline;
+    }
+
+    /* To remove underline from the anchor tags: */
+    a{
+        text-decoration: none;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>This is First Heading.</h1>
+    <h1 class="second-heading h1-heading-2">This is Second Heading.</h1>
+    <h1>This is Third Heading.</h1>
+    <h2>This is Sub Heading 1.</h2>
+    <h2 class="second-heading h2-heading-2">This is Sub Heading 2.</h2>
+    <h2>This is Sub Heading 3.</h2>
+    <h3>This is small heading 1.</h3>
+    <h3 class="second-heading h3-heading-2">This is small heading 2.</h3>
+    <h3>This is small heading 3.</h3>
+    <p class="para1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea temporibus
+      neque architecto reprehenderit odio quae libero rerum sint quo? Quas
+      voluptate incidunt, distinctio quibusdam quos, ratione totam quisquam ab
+      vero ullam sint iure natus laudantium debitis deserunt dolor doloribus
+      accusantium modi nihil facere possimus blanditiis voluptatum fuga. Modi,
+      nostrum non. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Mollitia, eius esse ipsam excepturi nesciunt vero odit aliquam molestias
+      ad praesentium? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Quasi sequi inventore asperiores accusamus sapiente non quod at ratione
+      labore consequatur.
+    </p>
+    <p class="para2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+      voluptate impedit natus velit enim aut in laudantium et illum, dolores
+      incidunt suscipit, recusandae atque eligendi! Esse pariatur iusto itaque
+      sunt ipsam ipsa nihil, quod aliquid numquam voluptates inventore vitae
+      repellat atque voluptatem. Veniam distinctio adipisci aliquid obcaecati
+      repellendus provident cupiditate. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Distinctio nesciunt inventore at magni. Enim labore
+      officiis blanditiis ducimus expedita aut dignissimos, aspernatur
+      reprehenderit, vero repudiandae, ea porro exercitationem. Nemo, pariatur.
+    </p>
+    <p class="para3">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
+      minima nesciunt est deleniti. Quidem quis nesciunt deleniti eaque.
+      Blanditiis asperiores voluptate velit cumque ex voluptas sed a libero nemo
+      iusto porro incidunt quisquam soluta, harum possimus eaque eos recusandae
+      nulla dolorem alias omnis, officiis commodi consectetur. Ipsam nemo
+      aliquid veniam. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Sapiente tempora ea aut corporis ipsam, perspiciatis doloribus neque
+      officia quisquam beatae maxime deleniti esse fugit voluptatem iure
+      expedita, iste modi odit?
+    </p>
+    <p class="para4">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam
+      minima nesciunt est deleniti. Quidem quis nesciunt deleniti eaque.
+      Blanditiis asperiores voluptate velit cumque ex voluptas sed a libero nemo
+      iusto porro incidunt quisquam soluta, harum possimus eaque eos recusandae
+      nulla dolorem alias omnis, officiis commodi consectetur. Ipsam nemo
+      aliquid veniam. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      Deserunt provident numquam quo amet doloremque iusto possimus optio,
+      aspernatur consequatur dolorem dignissimos ipsam dolorum veniam eligendi
+      voluptate aut id? Laborum dolorum soluta quasi voluptates dignissimos
+      ducimus odio, nam maxime officia sunt!
+    </p>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.facebook.com" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com" target="_blank">Instagram</a>
+  </body>
+</html>

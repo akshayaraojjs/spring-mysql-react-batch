@@ -1,0 +1,44 @@
+.box {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    background-color: lightcoral;
+    border: 5px solid brown;
+}
+
+.small-box {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+}
+
+.relative {
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+/* To apply absolute position, we need to give relative position for the parent. */
+/* If relative parent not available, the absolute position acts like relative poistion. */
+.absolute {
+    position: absolute;
+    top: 10px;
+    left: 400px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+}
+
+.sticky {
+    position: sticky;
+    top: 50px;
+    right: 20px;
+}
+
+/* To overwrite the position to normal, we will use static position */
+.fixed{
+    position: static;
+}

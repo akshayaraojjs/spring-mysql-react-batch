@@ -1,0 +1,88 @@
+/* This is a External Style Sheet */
+/* Font-families: */
+/* Serif, Sans-Serif, Monospace, Cursive & Fantasy */
+
+/* Font-face Rule */
+/* ttf, otf, woff */
+/* ttf - True Type Font */
+/* otf - Open Type Font */
+/* woff - Web Open Font */
+
+/* To apply fonts using Offline Font, we use @font-face rule */
+/* @font-face {
+    font-family: "Name of the font";
+    src: url("path to the font");
+} */
+
+@font-face {
+  font-family: Roboto-font;
+  /* Relative Path */
+  src: url("../media/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: Montserrat-font;
+  /* Absolute Path */
+  /* src: url("D:/MTD Training/MySQL + Spring + React/Frontend/media/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf"); */
+  src: url("../media/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Font3;
+  src: url("../media/fonts/Isometra/Isometra-Regular.ttf");
+}
+
+h1 {
+  /* Online Font */
+  /* font-family: "Roboto", sans-serif; */
+  /* Offline Font */
+  font-family: "Roboto-font";
+  font-size: 50px;
+}
+
+h2 {
+  /* Online Font */
+  /* font-family: "Montserrat", sans-serif; */
+  /* Offline Font */
+  font-family: "Montserrat-font";
+  font-size: 30px;
+}
+
+/* CSS styles will apply from Top to Bottom */
+
+/* Priority: */
+/* ID > Class > Element */
+
+/* ID Selector */
+/* #idName is used to apply styles */
+/* id cannot be repeated as it is unique */
+#paragraph2 {
+  color: darkblue;
+}
+
+/* Element Selector */
+p {
+  color: red;
+  font-size: 20px;
+  /* Online Font */
+  /* font-family: "Isometra", serif; */
+  /* Offline Font */
+  font-family: "Font3";
+}
+
+/* Class Selector */
+.para {
+  color: brown;
+}
+
+#paragraph2 {
+  color: goldenrod;
+  font-family: "Playwrite BE WAL Guides", cursive;
+  /* font-weight is used to make the font bolder or lighter */
+  /* font-weight: 100 - 900 | lighter | bold */
+  font-weight: bold;
+}
+
+.para3 {
+  font-family: "Bitcount Ink", system-ui;
+}
