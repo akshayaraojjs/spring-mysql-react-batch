@@ -1,0 +1,67 @@
+/* display: block */
+/* Inline Elements to Block Elements */
+
+span {
+    display: block;
+    color: white;
+    background-color: brown;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    border: 2px solid grey;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: crimson;
+}
+
+/* display: inline */
+/* Block Elements to Inline Elements */
+
+div {
+    display: inline;
+    background-color: chocolate;
+    color: aliceblue;
+    /* Shift + Alt + Down Arrow */
+    /* Alt + Down Arrow */
+    width: 300px;
+    height: 100px;
+}
+
+p {
+    display: inline;
+    background-color: darkblue;
+    color: aliceblue;
+    width: 300px;
+    height: 150px;
+}
+
+/* display: inline-block */
+/* In inline display property, we cannot adjust the height and width of the element, so we are using inline block display property to adjust both height and width */
+
+li {
+    display: inline-block;
+    background-color: lightskyblue;
+    width: 200px;
+    height: 50px;
+}
+
+/* display: none */
+/* This property is used to make the element disappear */
+
+b, i {
+    display: none;
+    background-color: aqua;
+}
+
+/* visibility: hidden */
+
+h1 {
+    visibility: hidden;
+}
+
+h2 {
+    display: none;
+}
