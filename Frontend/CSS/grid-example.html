@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Universal Selector ("*") to apply style for all elements */
+        * {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .main {
+            border: 2px dashed red;
+            width: 800px;
+            height: 600px;
+            display: grid;
+            grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+        }
+
+        .header, .footer {
+            background-color: orange;
+            /* grid-row: start / end; */
+            grid-column: 1 / 4;
+        }
+
+        .content-1 {
+            background-color: red;
+            grid-column: 2 / 4;
+        }
+
+        .content-2, .content-3 {
+            background-color: blueviolet;
+        }
+
+        .sidebar {
+            background-color: darkorange;
+            grid-row: 2 / 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content-1">Content 1</div>
+        <div class="content-2">Content 2</div>
+        <div class="content-3">Content 3</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

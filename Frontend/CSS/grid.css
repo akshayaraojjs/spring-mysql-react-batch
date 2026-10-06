@@ -1,0 +1,82 @@
+.parent {
+  border: 10px dotted goldenrod;
+  width: 1200px;
+  height: 600px;
+  display: grid;
+  /* grid-template-rows is used to define the row size */
+
+  /* grid-template-rows: 150px 150px 200px;
+    grid-template-columns: 200px 400px 300px; */
+
+  /* fr unit is used to define the size in fractions */
+  grid-template-rows: 1fr 1.5fr 2fr 1fr;
+
+  /* repeat method can be used for repeatative values */
+  /* grid-template-columns: repeat(how_many, how_much); */
+  grid-template-columns: repeat(3, 1fr);
+
+  /* shorthand for grid-template-rows & cols */
+  /* grid-template: rows / columns */
+  grid-template: 1fr 1.5fr 2fr 1fr 1fr / repeat(3, 1fr);
+  /* grid-template: 100px 150px 200px / repeat(3, 1fr); */
+
+  row-gap: 20px;
+  column-gap: 40px;
+
+  /* Shorthand for gap */
+  /* 1 value: both row & column will have same value*/
+  /* 2 value: row gap & column gap*/
+  gap: 20px 40px;
+
+  /* If any extra item found rather than the defined rows & cols, where to place it? */
+  /* grid-auto-flow: column | row; */
+  /* grid-auto-flow: column; */
+  /* How much size need to be given for that extra item */
+  /* grid-auto-rows | grid-auto-columns */
+  /* grid-auto-columns: 300px; */
+}
+
+.child {
+  border: 2px solid black;
+  background-color: aqua;
+  font-size: 20px;
+  font-weight: bold;
+  /* To align the text - Vertically & Horizontally Centered */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* To adjust the area of each child, we can use this property*/
+.child-1 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.child-5 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.child-6 {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.child-3 {
+  grid-row-start: 4;
+  grid-row-end: 7;
+}
+
+.child-8 {
+  grid-row-start: 6;
+  grid-row-end: 8;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
