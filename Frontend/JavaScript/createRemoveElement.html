@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Creating div tag from JS using createElement() method
+        const div = document.createElement("div");
+        div.textContent = "Hello World";
+        console.log(div);
+
+        const link = document.createElement("a");
+        link.href = "https://wwww.google.com";
+        link.textContent = "Google";
+        link.target = "_blank";
+        console.log(link);
+
+        const list = document.createElement("ul");
+
+        const listItem = document.createElement("li");
+        listItem.textContent = "Item 1";
+        
+        list.appendChild(listItem);
+
+        console.log(list);
+
+        ["Milk", "Curd", "Butter", "Coffee", "Ghee", "Paneer", "Green Tea"].forEach(word => {
+            const item = document.createElement("li");
+            item.textContent = word;
+            list.appendChild(item);
+        });
+
+        const body = document.querySelector("body");
+        // appendChild() method can be used to add only one element at a time
+        body.appendChild(div);
+        
+        // append() method can be used to add multiple elements at a time
+        body.append(link, list);
+
+        // children can be used to target the child elements of the parent element
+        const item1 = list.children[0];
+        console.log(item1.innerHTML);
+
+        // removeChild() method is a old removal method
+        list.removeChild(item1);
+
+        const coffee = list.children[3];
+        console.log(coffee);
+        const greenTea = list.children[6];
+        console.log(greenTea);
+
+        // remove() method is a modern removal method
+        list.children[3].remove();
+        list.children[5].remove();
+
+        console.log(list.firstChild);
+        console.log(list.lastChild);
+    </script>
+</body>
+</html>

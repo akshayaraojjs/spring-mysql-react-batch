@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <!-- Event Handlers - onclick, ondblclick, onhover -->
+    <!-- <button onclick="changeText()" ondblclick="changeStyle()" onmouseover="changeSize()">Click me</button> -->
+    <button id="btn">Click here!</button>
+
+    <script>
+        const heading1 = document.querySelector("h1");
+
+        const button = document.getElementById("btn");
+
+        function changeText(){
+            heading1.textContent = "Heading Changed due to Button Click";
+            heading1.style.textAlign = "center";
+            heading1.style.backgroundColor = "red";
+            heading1.style.color = "yellow";
+            heading1.style.padding = "5px";
+        }
+
+        function changeStyle(){
+            heading1.textContent = "Heading Changed due to Double Button Click";
+            heading1.style.textAlign = "right";
+            heading1.style.backgroundColor = "darkblue";
+            heading1.style.color = "yellow";
+            heading1.style.padding = "2px";
+        }
+
+        function changeSize() {
+            heading1.style.fontSize = "40px";
+        }
+
+        // addEventListener() method is used to check for the event to occur
+        button.addEventListener("click", () => {
+            heading1.textContent = "Heading Changed due to Button Click";
+            heading1.style.textAlign = "center";
+            heading1.style.backgroundColor = "red";
+            heading1.style.color = "yellow";
+            heading1.style.padding = "5px";
+        });
+
+        button.addEventListener("dblclick", () => {
+            heading1.textContent = "Heading Changed due to Double Button Click";
+            heading1.style.textAlign = "right";
+            heading1.style.backgroundColor = "darkblue";
+            heading1.style.color = "yellow";
+            heading1.style.padding = "2px";
+        });
+    </script>
+</body>
+</html>
