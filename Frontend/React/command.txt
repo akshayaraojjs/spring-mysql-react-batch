@@ -1,0 +1,48 @@
+Current React Version: "19.2.8"
+Virtual DOM is used in React
+React Application is built using "Component Based Approach"
+Component - Each element in the web page is a component
+
+JSX - JavaScript XML
+
+XML - Extended Markup Language
+
+Vite is a package which helps to work faster by refreshing the webpage as soon as the file is saved.
+
+All JSX files in React should be in the Pascal Case:
+Home.jsx
+AboutUs.jsx
+ServiceCard.jsx
+
+URL: http://localhost:5173
+
+HTTP: Hyper Text Transfer Protocol (For Request & Response)
+localhost: Currently working in our local system without any custom domain
+5173: Default Port Number for Vite. If used by other service (Port will change automatically)
+
+React Default Port Number: 3000
+
+Syntax: 
+npm create vite@latest project-name
+
+npm create vite@latest first-react-app
+
+Options to select:
+1) Select a Framework: React
+2) Select a variant: JavaScript
+3) Which Linter to use?: ESLint
+4) To install dependency: No
+
+package.json - Dependency Manager
+
+Very Important Files in React Project:
+1) package.json
+2) index.html
+3) src/main.jsx
+4) src/App.jsx
+
+src/main.jsx is targetting the "root" element from index.html and helping us to Manipulate the DOM with React.
+
+=> document.getElementById('root')
+
+src/App.jsx is the file which is shown in the O/p

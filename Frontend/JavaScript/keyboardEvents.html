@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="input" placeholder="Enter any text here...">
+    </div>
+    <script>
+        const input = document.getElementById("input");
+
+        input.addEventListener("keydown", (e) => {
+            console.log("Down", e.key);
+        });
+
+        input.addEventListener("keyup", (e) => {
+            console.log("Up", e.key);
+        });
+
+        document.addEventListener("keydown", (e) => {
+            // e.key can be used to track the keys entered by user
+            console.log(e.key);
+
+            // e.code is used to track the key with a predefined names for each key
+            console.log(e.code);
+
+            // e.keyCode is used to track the key with a predefined number for each key
+            console.log(e.keyCode);
+
+            console.log(e.ctrlKey);
+        })
+
+        document.addEventListener("keydown", (e) => {
+            // if(e.ctrlKey && e.key === "c") {
+            if(e.ctrlKey && e.key === "s") {
+                e.preventDefault();
+                // console.log("Trying to Copy!");
+                console.log("Trying to Save!");
+            }
+        });
+
+        // preventDefault():
+        document.addEventListener("keydown", (e) => {
+            if(e.key === " " && e.target === document.body) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+</html>
